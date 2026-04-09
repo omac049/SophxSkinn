@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-const MOBILE_NAV_QUERY = '(max-width: 768px)';
+const MOBILE_NAV_QUERY = '(max-width: 920px)';
 
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(() => {

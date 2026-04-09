@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function SiteFooter({ brand, social }) {
   const currentYear = new Date().getFullYear();
 
@@ -12,10 +14,10 @@ export default function SiteFooter({ brand, social }) {
 
           <div className="footer-column">
             <p className="footer-column-title">Services</p>
-            <a href="/services">Facials</a>
-            <a href="/services">Brows</a>
-            <a href="/services">Lashes</a>
-            <a href="/services">Waxing</a>
+            <Link to="/services">Facials</Link>
+            <Link to="/services">Brows</Link>
+            <Link to="/services">Lashes</Link>
+            <Link to="/services">Waxing</Link>
           </div>
 
           <div className="footer-column">

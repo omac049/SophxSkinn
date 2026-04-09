@@ -1,3 +1,6 @@
+const base = import.meta.env.BASE_URL;
+const asset = (path) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
+
 export const siteContent = {
   brand: {
     name: 'SophxSkinn',
@@ -8,82 +11,82 @@ export const siteContent = {
     primaryCtaLabel: 'Book On Vagaro',
     primaryCtaUrl: 'https://www.vagaro.com/theremedy?utm_source=sphxskinn.com',
     salon: 'The Remedy Salon',
-    scriptLogo: '/assets/Sophxskinn.png',
-    altLogo: '/assets/AB8A5850-BC05-46A2-90A2-BAFFF757C5E9.png',
+    scriptLogo: asset('assets/Sophxskinn.png'),
+    altLogo: asset('assets/AB8A5850-BC05-46A2-90A2-BAFFF757C5E9.png'),
     clientVideos: [
       {
-        src: '/assets/videos/client-1.mp4',
+        src: asset('assets/videos/client-1.mp4'),
         title: 'Client Ritual 01',
       },
       {
-        src: '/assets/videos/client-2.mp4',
+        src: asset('assets/videos/client-2.mp4'),
         title: 'Client Ritual 02',
       },
       {
-        src: '/assets/videos/client-3.mp4',
+        src: asset('assets/videos/client-3.mp4'),
         title: 'Client Ritual 03',
       },
     ],
     estheticianImages: [
       {
-        src: '/assets/photos/esthetician/sophxskinn-1.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-1.jpg'),
         alt: 'SophxSkinn esthetician portrait',
         caption: 'SophxSkinn in studio',
       },
       {
-        src: '/assets/photos/esthetician/sophxskinn-2.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-2.jpg'),
         alt: 'SophxSkinn esthetician branding portrait',
         caption: 'Licensed esthetician',
       },
       {
-        src: '/assets/photos/esthetician/sophxskinn-3.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-3.jpg'),
         alt: 'SophxSkinn esthetician close-up portrait',
         caption: 'Soft-glam skin focus',
       },
       {
-        src: '/assets/photos/esthetician/sophxskinn-4.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-4.jpg'),
         alt: 'SophxSkinn esthetician professional portrait',
         caption: 'Refined service detail',
       },
       {
-        src: '/assets/photos/esthetician/sophxskinn-5.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-5.jpg'),
         alt: 'SophxSkinn esthetician smiling portrait',
         caption: 'Polished studio vibe',
       },
       {
-        src: '/assets/photos/esthetician/sophxskinn-6.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-6.jpg'),
         alt: 'SophxSkinn esthetician portrait in salon',
         caption: 'Concierge booking experience',
       },
       {
-        src: '/assets/photos/esthetician/sophxskinn-7.jpg',
+        src: asset('assets/photos/esthetician/sophxskinn-7.jpg'),
         alt: 'SophxSkinn esthetician signature portrait',
         caption: 'Beauty with care',
       },
     ],
     clientImages: [
       {
-        src: '/assets/photos/clients/client-brows.png',
+        src: asset('assets/photos/clients/client-brows.png'),
         alt: 'Client brow service result',
         caption: 'Brow detail',
       },
       {
-        src: '/assets/photos/clients/client-brow-lamination.png',
+        src: asset('assets/photos/clients/client-brow-lamination.png'),
         alt: 'Client brow lamination result',
         caption: 'Brow lamination',
       },
       {
-        src: '/assets/photos/clients/client-lash.png',
+        src: asset('assets/photos/clients/client-lash.png'),
         alt: 'Client lash service result',
         caption: 'Lash result',
       },
       {
-        src: '/assets/photos/clients/client-lash-lift.png',
+        src: asset('assets/photos/clients/client-lash-lift.png'),
         alt: 'Client lash lift result',
         caption: 'Lash lift',
       },
       {
-        src: '/assets/photos/clients/client-photo-1.jpeg',
+        src: asset('assets/photos/clients/client-photo-1.jpeg'),
         alt: 'Client beauty service result',
         caption: 'Client glow',
       },

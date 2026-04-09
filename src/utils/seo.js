@@ -1,7 +1,13 @@
+const base = import.meta.env.BASE_URL;
+
 export function absoluteUrl(path = '/') {
   if (typeof window === 'undefined') {
     return path;
   }
 
-  return new URL(path, window.location.origin).toString();
+  const resolved = path.startsWith('/')
+    ? `${base}${path.slice(1)}`
+    : `${base}${path}`;
+
+  return new URL(resolved, window.location.origin).toString();
 }

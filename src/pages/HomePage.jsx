@@ -40,7 +40,7 @@ export default function HomePage({ content }) {
           content="Book your next facial, brow, lash, or waxing session with SophxSkinn."
         />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={absoluteUrl('/assets/Sophxskinn.png')} />
+        <meta property="og:image" content={absoluteUrl('assets/Sophxskinn.png')} />
       </Helmet>
 
       <HeroSection brand={{ ...brand, brandPillars }} />

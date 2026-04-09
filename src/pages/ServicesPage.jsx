@@ -158,7 +158,7 @@ export default function ServicesPage({ content }) {
           content="See service categories, text-first menu details, and book your next SophxSkinn appointment."
         />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={absoluteUrl('/assets/AB8A5850-BC05-46A2-90A2-BAFFF757C5E9.png')} />
+        <meta property="og:image" content={absoluteUrl('assets/AB8A5850-BC05-46A2-90A2-BAFFF757C5E9.png')} />
       </Helmet>
 
       <motion.section
