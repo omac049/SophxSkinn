@@ -1,0 +1,21 @@
+node_modules/
+dist/
+**/.DS_Store
+.playwright-cli/
+
+# Raw source assets at root (originals already in public/assets/)
+/AB8A5850-BC05-46A2-90A2-BAFFF757C5E9.png
+/Client-1.mp4
+/Lashlift.png
+/Sophxskinn.png
+/browlamination.png
+/brows.png
+/client2.mp4
+/client3.mp4
+/colorpalet.png
+/lash.png
+/menu1.png
+/menu2.png
+/sophxskinn*.JPG
+/Photo*.JPG
+/Photo*.jpeg
