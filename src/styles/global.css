@@ -696,8 +696,7 @@ h3,
 .image-mosaic-grid {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 
@@ -708,6 +707,7 @@ h3,
   border-radius: var(--radius-xl);
   background: var(--ink-900);
   cursor: pointer;
+  aspect-ratio: 3 / 4;
 }
 
 .mosaic-video {
@@ -731,15 +731,6 @@ h3,
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.tile-feature {
-  grid-column: 1 / -1;
-  aspect-ratio: 16 / 7;
-}
-
-.tile-tall {
-  aspect-ratio: 3 / 4;
 }
 
 .mosaic-overlay {
@@ -2195,6 +2186,14 @@ button:focus-visible,
     min-height: 44px;
   }
 
+  .image-mosaic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaic-tile {
+    aspect-ratio: 4 / 3;
+  }
+
   .menu-text-item h3 {
     font-size: 1.5rem;
   }
@@ -2535,12 +2534,8 @@ button:focus-visible,
     gap: 8px;
   }
 
-  .tile-feature {
-    aspect-ratio: 16 / 9;
-  }
-
-  .tile-tall {
-    aspect-ratio: 4 / 5;
+  .mosaic-tile {
+    aspect-ratio: 5 / 4;
   }
 
   .mosaic-cta {

@@ -14,7 +14,7 @@ export default function ImageMosaic({ eyebrow, title, videos = [], bookingUrl })
       <div className="image-mosaic-grid">
         {videos.map((video, index) => (
           <motion.div
-            className={`mosaic-tile ${index === 0 ? 'tile-feature' : 'tile-tall'}`}
+            className="mosaic-tile"
             key={video.src}
             initial={shouldReduceMotion ? false : { opacity: 0, y: 30, scale: 0.97 }}
             whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
