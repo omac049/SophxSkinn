@@ -106,7 +106,9 @@ export const siteContent = {
       id: 'facials',
       name: 'Facials',
       shortDescription:
-        'Targeted sessions designed around hydration, texture, and a glow you can wear anywhere.',
+        'Hydration, texture, and a glow you can wear anywhere.',
+      image: asset('assets/photos/clients/client-photo-1.jpeg'),
+      imageAlt: 'Client facial glow result',
       priceRange: 'View live pricing and availability on Vagaro',
       highlights: ['Skin reset', 'Glow-focused hydration', 'Customized treatment plans'],
     },
@@ -114,7 +116,9 @@ export const siteContent = {
       id: 'brows',
       name: 'Brows',
       shortDescription:
-        'Shape and finish work that frames your look — clean, balanced, runway-ready.',
+        'Shape and finish that frames your look — runway-ready.',
+      image: asset('assets/photos/clients/client-brow-lamination.png'),
+      imageAlt: 'Client brow lamination result',
       priceRange: 'View live pricing and availability on Vagaro',
       highlights: ['Shape and symmetry', 'Soft cleanup', 'Event-ready finishing'],
     },
@@ -122,7 +126,9 @@ export const siteContent = {
       id: 'lashes',
       name: 'Lashes',
       shortDescription:
-        'Lift and definition that adds polish to every outfit, every day.',
+        'Lift and definition that adds polish to every outfit.',
+      image: asset('assets/photos/clients/client-lash-lift.png'),
+      imageAlt: 'Client lash lift result',
       priceRange: 'View live pricing and availability on Vagaro',
       highlights: ['Natural lift look', 'Definition boost', 'Low-maintenance beauty'],
     },
@@ -130,7 +136,9 @@ export const siteContent = {
       id: 'waxing',
       name: 'Waxing',
       shortDescription:
-        'Comfort-first smoothing with gentle prep and aftercare — skin ready for anything.',
+        'Comfort-first smoothing with gentle aftercare.',
+      image: asset('assets/photos/esthetician/sophxskinn-4.jpg'),
+      imageAlt: 'SophxSkinn waxing service',
       priceRange: 'View live pricing and availability on Vagaro',
       highlights: ['Comfort-minded approach', 'Clean finish', 'Aftercare support'],
     },
