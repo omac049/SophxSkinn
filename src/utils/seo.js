@@ -50,19 +50,19 @@ export function getLocalBusinessSchema() {
       itemListElement: [
         {
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Facials', description: 'Targeted sessions designed around hydration, texture, and a glow you can wear anywhere.' },
+          itemOffered: { '@type': 'Service', name: 'Facials', description: 'Boutique facials focused on hydration, texture, and the kind of glow that turns heads.' },
         },
         {
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Brows', description: 'Shape and finish work that frames your look — clean, balanced, runway-ready.' },
+          itemOffered: { '@type': 'Service', name: 'Brows', description: 'Sculpted arches with architectural precision — clean, balanced, red-carpet ready.' },
         },
         {
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Lashes', description: 'Lift and definition that adds polish to every outfit, every day.' },
+          itemOffered: { '@type': 'Service', name: 'Lashes', description: 'Effortless lift and serious definition — the finishing touch your look has been waiting for.' },
         },
         {
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Waxing', description: 'Comfort-first smoothing with gentle prep and aftercare — skin ready for anything.' },
+          itemOffered: { '@type': 'Service', name: 'Waxing', description: 'Polished, smooth skin with a comfort-first approach and curated aftercare.' },
         },
       ],
     },

@@ -7,7 +7,7 @@ export const siteContent = {
     subtitle: 'Licensed Esthetician',
     location: 'Goodyear, Arizona',
     tagline:
-      'Boutique skin rituals with a fashion-forward finish — facials, brows, lashes, and waxing.',
+      'Skin rituals with a fashion-forward edge — boutique facials, brows, lashes, and waxing.',
     primaryCtaLabel: 'Book On Vagaro',
     primaryCtaUrl: 'https://www.vagaro.com/theremedy?utm_source=sphxskinn.com',
     salon: 'The Remedy Salon',
@@ -27,56 +27,56 @@ export const siteContent = {
         src: asset('assets/videos/client-1.mp4'),
         title: 'Facial session',
         label: 'Facials',
-        tagline: 'Hydration that glows from within',
+        tagline: 'That just-got-a-facial glow — you know the one',
       },
       {
         src: asset('assets/videos/client-2.mp4'),
         title: 'Brow shaping',
         label: 'Brows',
-        tagline: 'Sculpted. Defined. You.',
+        tagline: 'Brows so good they deserve their own close-up',
       },
       {
         src: asset('assets/videos/brow-before-after.mp4'),
         title: 'Brow before & after',
         label: 'Before & After',
-        tagline: 'Real results, real clients',
+        tagline: 'The before is cute. The after is obsession-worthy.',
       },
     ],
     estheticianImages: [
       {
         src: asset('assets/photos/esthetician/sophxskinn-1.jpg'),
         alt: 'SophxSkinn esthetician portrait',
-        caption: 'SophxSkinn in studio',
+        caption: 'In her element',
       },
       {
         src: asset('assets/photos/esthetician/sophxskinn-2.jpg'),
         alt: 'SophxSkinn esthetician branding portrait',
-        caption: 'Licensed esthetician',
+        caption: 'Precision at work',
       },
       {
         src: asset('assets/photos/esthetician/sophxskinn-3.jpg'),
         alt: 'SophxSkinn esthetician close-up portrait',
-        caption: 'Soft-glam skin focus',
+        caption: 'Soft-glam energy',
       },
       {
         src: asset('assets/photos/esthetician/sophxskinn-4.jpg'),
         alt: 'SophxSkinn esthetician professional portrait',
-        caption: 'Refined service detail',
+        caption: 'Detailed. Intentional. Always.',
       },
       {
         src: asset('assets/photos/esthetician/sophxskinn-5.jpg'),
         alt: 'SophxSkinn esthetician smiling portrait',
-        caption: 'Polished studio vibe',
+        caption: 'The vibe? Polished.',
       },
       {
         src: asset('assets/photos/esthetician/sophxskinn-6.jpg'),
         alt: 'SophxSkinn esthetician portrait in salon',
-        caption: 'Concierge booking experience',
+        caption: 'Curated from start to finish',
       },
       {
         src: asset('assets/photos/esthetician/sophxskinn-7.jpg'),
         alt: 'SophxSkinn esthetician signature portrait',
-        caption: 'Beauty with care',
+        caption: 'Beauty with a point of view',
       },
     ],
     clientImages: [
@@ -112,41 +112,41 @@ export const siteContent = {
       id: 'facials',
       name: 'Facials',
       shortDescription:
-        'Hydration, texture, and a glow you can wear anywhere.',
+        'Hydration, texture, and the kind of glow that turns heads.',
       image: asset('assets/photos/clients/client-photo-1.jpeg'),
       imageAlt: 'Client facial glow result',
       priceRange: 'View live pricing and availability on Vagaro',
-      highlights: ['Skin reset', 'Glow-focused hydration', 'Customized treatment plans'],
+      highlights: ['Editorial-grade glow', 'Hydration that shows', 'Tailored to your skin story'],
     },
     {
       id: 'brows',
       name: 'Brows',
       shortDescription:
-        'Shape and finish that frames your look — runway-ready.',
+        'Sculpted arches that frame your face like the accessory it deserves.',
       image: asset('assets/photos/clients/client-brow-lamination.png'),
       imageAlt: 'Client brow lamination result',
       priceRange: 'View live pricing and availability on Vagaro',
-      highlights: ['Shape and symmetry', 'Soft cleanup', 'Event-ready finishing'],
+      highlights: ['Architectural precision', 'Soft-sculpted cleanup', 'Red-carpet ready'],
     },
     {
       id: 'lashes',
       name: 'Lashes',
       shortDescription:
-        'Lift and definition that adds polish to every outfit.',
+        'The finishing touch your look has been waiting for — effortless lift, serious definition.',
       image: asset('assets/photos/clients/client-lash-lift.png'),
       imageAlt: 'Client lash lift result',
       priceRange: 'View live pricing and availability on Vagaro',
-      highlights: ['Natural lift look', 'Definition boost', 'Low-maintenance beauty'],
+      highlights: ['Wide-awake definition', 'Effortless flutter', 'Low-key luxury'],
     },
     {
       id: 'waxing',
       name: 'Waxing',
       shortDescription:
-        'Comfort-first smoothing with gentle aftercare.',
+        'Polished, smooth skin with a comfort-first touch and luxe aftercare.',
       image: asset('assets/photos/esthetician/sophxskinn-4.jpg'),
       imageAlt: 'SophxSkinn waxing service',
       priceRange: 'View live pricing and availability on Vagaro',
-      highlights: ['Comfort-minded approach', 'Clean finish', 'Aftercare support'],
+      highlights: ['Gentle on skin, serious on smooth', 'Polished finish', 'Curated aftercare'],
     },
   ],
   testimonials: [
@@ -169,27 +169,27 @@ export const siteContent = {
   process: [
     {
       number: '01',
-      title: 'Choose Your Service',
-      description: 'Browse facials, brows, lashes, or waxing and find the ritual that fits.',
+      title: 'Find Your Ritual',
+      description: 'Browse the menu and pick the service that fits your moment.',
     },
     {
       number: '02',
-      title: 'Book on Vagaro',
-      description: 'Pick your time from live availability and confirm in under a minute.',
+      title: 'Secure Your Spot',
+      description: 'Real-time availability, one-tap booking. Easier than online shopping.',
     },
     {
       number: '03',
-      title: 'Your Session',
-      description: 'Arrive at The Remedy Salon for a calm, tailored appointment.',
+      title: 'The Main Event',
+      description: 'Settle into The Remedy Salon for a calm, fashion-forward treatment tailored to you.',
     },
     {
       number: '04',
-      title: 'Glow Forward',
-      description: 'Leave with results you can see and aftercare you can trust.',
+      title: 'Walk Out Glowing',
+      description: 'Leave with results that speak for themselves — plus aftercare that keeps the moment going.',
     },
   ],
   brandPillars: ['Precision', 'Polish', 'Intention'],
-  editorialTagline: 'Where skincare meets personal style.',
+  editorialTagline: 'Where skincare gets its own runway moment.',
   social: {
     handle: '@sophxskinn',
     url: 'https://www.instagram.com/sophxskinn/',
@@ -202,15 +202,15 @@ export const siteContent = {
     {
       question: 'How do I book?',
       answer:
-        'Use the Book On Vagaro button to choose your service, view real-time openings, and confirm online.',
+        'Tap Book On Vagaro, pick your service, and grab an open slot — real-time availability, instant confirmation.',
     },
     {
       question: 'Where are appointments located?',
-      answer: 'Appointments are hosted at The Remedy Salon — 13375 W McDowell Rd #108, Goodyear, AZ 85395.',
+      answer: 'The Remedy Salon — 13375 W McDowell Rd #108, Goodyear, AZ 85395. Easy parking, calm vibes.',
     },
     {
       question: 'Do you accept new clients?',
-      answer: 'Yes. SophxSkinn is currently accepting new clients.',
+      answer: 'Always. New faces are the best part.',
     },
   ],
 };

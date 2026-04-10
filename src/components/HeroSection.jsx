@@ -75,11 +75,11 @@ export default function HeroSection({ brand }) {
         />
 
         <motion.h1 id="hero-heading" className="hero-title headline-serif" variants={itemVariants}>
-          Beauty with intention, results with edge.
+          Beauty with intention. Edge included.
         </motion.h1>
 
         <motion.p className="hero-copy" variants={itemVariants}>
-          Boutique skin rituals at {brand.salon} — where skincare meets personal style.
+          Boutique skin rituals at {brand.salon} — where your skincare gets a style upgrade.
         </motion.p>
 
         <motion.div className="hero-actions" variants={itemVariants}>

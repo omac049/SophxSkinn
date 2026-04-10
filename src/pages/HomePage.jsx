@@ -68,25 +68,25 @@ export default function HomePage({ content }) {
       <Marquee items={marqueeItems} />
 
       <ImageMosaic
-        eyebrow="Studio Atmosphere"
-        title="Studio moments"
+        eyebrow="Studio Diaries"
+        title="Behind the glow"
         videos={brand.clientVideos}
         bookingUrl={brand.primaryCtaUrl}
       />
 
       <PhotoGallerySection
-        eyebrow="Meet SophxSkinn"
-        title="Your esthetician"
-        description="A closer look at the face behind SophxSkinn — polished, personal, and intentional care."
-        signatureLine="Every appointment is tailored with intention, precision, and a soft-glam finish."
+        eyebrow="The Face Behind the Brand"
+        title="Meet your esthetician"
+        description="Equal parts precision, personality, and impeccable taste — get to know the one behind every glow."
+        signatureLine="Every appointment is intentional, precise, and finished with a soft-glam edge."
         images={brand.estheticianImages.slice(0, 6)}
         ariaLabel="SophxSkinn esthetician gallery"
       />
 
       <ProcessTimeline
         steps={processSteps}
-        eyebrow="Your Visit"
-        heading="From booking to glow"
+        eyebrow="How It Works"
+        heading="From tapping 'book' to walking out glowing"
       />
 
       <SectionReveal className="content-section signature-services-section" as="section">
@@ -96,7 +96,7 @@ export default function HomePage({ content }) {
             <p className="eyebrow">Signature Services</p>
             <h2>Your glow edit</h2>
             <p>
-              Pick the service that fits your goals, then book live on Vagaro.
+              Find your perfect ritual, then lock in your time on Vagaro. No phone tag required.
             </p>
           </div>
           <a
@@ -114,11 +114,11 @@ export default function HomePage({ content }) {
       <TestimonialSection testimonials={testimonials} />
 
       <PrimaryCTA
-        eyebrow="Concierge Booking"
-        heading="Reserve your next appointment"
-        body="View live openings, choose your service, and secure your time in a few taps."
-        helper="Most guests complete booking in under a minute."
-        conciergePromise="A calm, one-on-one booking experience from start to finish."
+        eyebrow="Ready When You Are"
+        heading="Your next appointment is a tap away"
+        body="Live openings, easy checkout, instant confirmation — booking should feel as good as the appointment."
+        helper="Most clients book in under 60 seconds. Seriously."
+        conciergePromise="No hold music. No back-and-forth. Just a smooth, one-tap booking flow."
         availabilityNote="Live Vagaro openings updated in real time."
         proofStats={[
           { value: 'Live', label: 'Opening updates' },
@@ -126,14 +126,14 @@ export default function HomePage({ content }) {
           { value: 'Secure', label: 'Vagaro booking' },
         ]}
         proofPoints={[
-          'Private concierge support',
+          'VIP booking experience',
           'Instant confirmation',
-          'New clients welcome',
+          'New clients always welcome',
         ]}
         steps={[
-          'Choose your service',
-          'Review live openings',
-          'Confirm your appointment',
+          'Pick your ritual',
+          'Browse live openings',
+          'Lock in your time',
         ]}
         secondaryActionLabel="View Services"
         secondaryActionHref="/services"

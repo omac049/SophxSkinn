@@ -9,7 +9,7 @@ import PrimaryCTA from '../components/PrimaryCTA';
 import PhotoGallerySection from '../components/PhotoGallerySection';
 import { absoluteUrl, getLocalBusinessSchema, getBreadcrumbSchema, getFAQSchema } from '../utils/seo';
 
-const HERO_PILLS = ['Live availability', 'Reserve in minutes', 'Soft-glam results'];
+const HERO_PILLS = ['Live availability', 'Book in seconds', 'Fashion-forward results'];
 
 const HERO_LEFT_ACCENT_STYLE = {
   position: 'absolute',
@@ -130,11 +130,11 @@ export default function ServicesPage({ content }) {
   }, []);
 
   const heroHeading = isCompactLayout
-    ? 'Book services fast. Scan the menu in one glance.'
-    : 'Signature services with polished results and booking made easy.';
+    ? 'Your skin menu. Tap, book, glow.'
+    : 'Signature rituals. Polished results. Effortless booking.';
   const heroBody = isCompactLayout
-    ? `Tap to book facials, brows, lashes, or waxing at ${brand.salon} in ${brand.location}. Live Vagaro openings keep the checkout quick on your phone.`
-    : `Choose facials, brows, lashes, or waxing at ${brand.salon} in ${brand.location}, then reserve your appointment online in minutes through Vagaro.`;
+    ? `Facials, brows, lashes, and waxing at ${brand.salon} in ${brand.location} — browse, book, done.`
+    : `Facials, brows, lashes, and waxing at ${brand.salon} in ${brand.location}. Find the service that fits your vibe, then lock in your time on Vagaro.`;
   const heroPills = isCompactLayout ? HERO_PILLS.slice(0, 2) : HERO_PILLS;
 
   return (
@@ -291,8 +291,8 @@ export default function ServicesPage({ content }) {
 
       <PhotoGallerySection
         eyebrow="Client Spotlights"
-        title="Recent client beauty moments"
-        description="Real client results across brows, lashes, and glow-focused appointments."
+        title="The proof is in the glow"
+        description="Real clients, real results — brows sculpted, lashes lifted, and skin that speaks for itself."
         images={brand.clientImages}
         ariaLabel="Client service result gallery"
       />
@@ -302,7 +302,7 @@ export default function ServicesPage({ content }) {
       <SectionReveal className="faq-section" as="section">
         <div className="section-headline">
           <p className="eyebrow">Appointment FAQ</p>
-          <h2>Quick answers before you reserve</h2>
+          <h2>Quick answers before you book</h2>
         </div>
         <dl>
           {faq.map((item, index) => (
@@ -328,10 +328,10 @@ export default function ServicesPage({ content }) {
       </SectionReveal>
 
       <PrimaryCTA
-        eyebrow="Reserve Your Session"
-        heading="Reserve your appointment online"
-        body="Tap Book On Vagaro to choose a service, view live availability, and confirm your preferred time."
-        helper="A polished appointment is only a few taps away."
+        eyebrow="Ready When You Are"
+        heading="Your next glow-up starts here"
+        body="Pick your service, grab an open time, and confirm — polished results are a few taps away."
+        helper="Booking should feel as effortless as the results look."
         buttonLabel={brand.primaryCtaLabel}
         buttonHref={brand.primaryCtaUrl}
       />
