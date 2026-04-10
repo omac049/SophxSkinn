@@ -9,19 +9,22 @@ export default function ImageMosaic({ eyebrow, title, description, videos = [] }
       <div className="section-headline">
         <p className="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
 
       <div className="image-mosaic-grid">
         {videos.map((video, index) => (
-          <motion.figure
-            className={`mosaic-tile ${index === 2 ? 'tile-wide' : 'tile-tall'}`}
+          <motion.div
+            className={`mosaic-tile ${index === 0 ? 'tile-feature' : 'tile-tall'}`}
             key={video.src}
-            initial={shouldReduceMotion ? false : { opacity: 0, y: 22 }}
-            whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={shouldReduceMotion ? undefined : { duration: 0.6, delay: index * 0.12 }}
-            whileHover={shouldReduceMotion ? undefined : { y: -4, scale: 1.01 }}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 30, scale: 0.97 }}
+            whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={
+              shouldReduceMotion
+                ? undefined
+                : { type: 'spring', stiffness: 180, damping: 22, delay: index * 0.1 }
+            }
           >
             <video
               className="mosaic-video"
@@ -33,8 +36,7 @@ export default function ImageMosaic({ eyebrow, title, description, videos = [] }
               preload="metadata"
               aria-label={video.title}
             />
-            <figcaption>{video.title}</figcaption>
-          </motion.figure>
+          </motion.div>
         ))}
       </div>
     </SectionReveal>

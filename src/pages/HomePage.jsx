@@ -70,7 +70,6 @@ export default function HomePage({ content }) {
       <ImageMosaic
         eyebrow="Studio Atmosphere"
         title="Studio moments"
-        description="Short studio reels from recent sessions."
         videos={brand.clientVideos}
       />
 

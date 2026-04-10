@@ -555,8 +555,7 @@ h3,
 .social-proof,
 .instagram-slot-block,
 .menu-panel,
-.faq-section,
-.image-mosaic {
+.faq-section {
   padding: clamp(2.2rem, 4vw, 3.5rem);
   border-radius: var(--radius-xl);
   background: var(--surface-card);
@@ -695,57 +694,35 @@ h3,
 /* ─── IMAGE MOSAIC ─── */
 
 .image-mosaic-grid {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 12px;
 }
 
 .mosaic-tile {
   margin: 0;
   position: relative;
   overflow: hidden;
-  border-radius: var(--radius-lg);
-  border: none;
-  box-shadow: var(--shadow-medium);
+  border-radius: var(--radius-xl);
   background: var(--ink-900);
 }
 
-.mosaic-tile video,
 .mosaic-video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.mosaic-tile::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(26, 18, 16, 0.7) 100%);
-  pointer-events: none;
-}
-
-.mosaic-tile figcaption {
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: 12px;
-  z-index: 2;
-  color: rgba(255, 250, 248, 0.9);
-  font-size: 0.84rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+.tile-feature {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 7;
 }
 
 .tile-tall {
-  grid-column: span 4;
-  min-height: clamp(360px, 56vw, 540px);
-}
-
-.tile-wide {
-  grid-column: span 4;
-  min-height: clamp(240px, 35vw, 300px);
+  aspect-ratio: 3 / 4;
 }
 
 /* ─── MEET SECTION ─── */
@@ -1882,9 +1859,8 @@ button:focus-visible,
     justify-content: center;
   }
 
-  .tile-tall,
-  .tile-wide {
-    grid-column: span 6;
+  .image-mosaic-grid {
+    gap: 10px;
   }
 
   .meet-spread {
@@ -2103,7 +2079,25 @@ button:focus-visible,
   }
 
   .signature-services-cta {
-    width: fit-content;
+    display: none;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 1.5rem;
+  }
+
+  .service-tile {
+    aspect-ratio: 4 / 3;
+  }
+
+  .service-tile-name {
+    font-size: 2rem;
+  }
+
+  .service-tile-cta {
+    min-height: 44px;
   }
 
   .menu-text-item h3 {
@@ -2185,8 +2179,7 @@ button:focus-visible,
   .social-proof,
   .instagram-slot-block,
   .menu-panel,
-  .faq-section,
-  .image-mosaic {
+  .faq-section {
     padding: 1.8rem;
   }
 
@@ -2270,11 +2263,6 @@ button:focus-visible,
     width: calc(100% - 32px);
   }
 
-  .tile-tall,
-  .tile-wide {
-    grid-column: span 12;
-  }
-
   .header-inner {
     width: min(var(--max-width), calc(100% - 24px));
   }
@@ -2318,7 +2306,7 @@ button:focus-visible,
   }
 
   .signature-services-cta {
-    width: 100%;
+    display: none;
   }
 
   .content-section,
@@ -2327,11 +2315,14 @@ button:focus-visible,
   .menu-panel,
   .faq-section,
   .services-hero,
-  .primary-cta,
-  .image-mosaic {
+  .primary-cta {
     width: calc(100% - 24px);
     padding: 1.4rem;
     border-radius: var(--radius-xl);
+  }
+
+  .image-mosaic {
+    width: calc(100% - 24px);
   }
 
   .meet-section {
@@ -2385,7 +2376,27 @@ button:focus-visible,
   }
 
   .service-grid {
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-tile {
+    aspect-ratio: 5 / 4;
+  }
+
+  .service-tile-name {
+    font-size: 1.8rem;
+  }
+
+  .service-tile-desc {
+    font-size: 0.84rem;
+    max-width: 34ch;
+  }
+
+  .service-tile-cta {
+    margin-top: 0.75rem;
+    padding: 10px 22px;
+    min-height: 44px;
   }
 
   .menu-text-grid {
@@ -2426,19 +2437,19 @@ button:focus-visible,
   }
 
   .image-mosaic-grid {
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .tile-feature {
+    aspect-ratio: 16 / 9;
+  }
+
+  .tile-tall {
+    aspect-ratio: 4 / 5;
   }
 
   .mosaic-tile {
-    aspect-ratio: 4 / 5;
-    min-height: 0;
-  }
-
-  .mosaic-tile figcaption {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    font-size: 0.8rem;
+    border-radius: var(--radius-lg);
   }
 
   .meet-featured {

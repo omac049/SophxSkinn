@@ -25,15 +25,15 @@ export const siteContent = {
     clientVideos: [
       {
         src: asset('assets/videos/client-1.mp4'),
-        title: 'Client Ritual 01',
+        title: 'Facial session',
       },
       {
         src: asset('assets/videos/client-2.mp4'),
-        title: 'Client Ritual 02',
+        title: 'Brow shaping',
       },
       {
-        src: asset('assets/videos/client-3.mp4'),
-        title: 'Client Ritual 03',
+        src: asset('assets/videos/brow-before-after.mp4'),
+        title: 'Brow before & after',
       },
     ],
     estheticianImages: [
