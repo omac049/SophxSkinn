@@ -21,9 +21,19 @@ export default function SiteFooter({ brand, social }) {
           </div>
 
           <div className="footer-column">
-            <p className="footer-column-title">Info</p>
+            <p className="footer-column-title">Visit</p>
             <p>{brand.salon}</p>
-            <p>{brand.location}</p>
+            <address className="footer-address">
+              <a
+                href={brand.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Get directions to The Remedy Salon"
+              >
+                {brand.addressStreet}<br />
+                {brand.addressCity}, {brand.addressState} {brand.addressZip}
+              </a>
+            </address>
             <a href={brand.primaryCtaUrl} target="_blank" rel="noreferrer">
               Book Online
             </a>

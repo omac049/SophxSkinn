@@ -9,7 +9,7 @@ import ImageMosaic from '../components/ImageMosaic';
 import PhotoGallerySection from '../components/PhotoGallerySection';
 import TestimonialSection from '../components/TestimonialSection';
 import ProcessTimeline from '../components/ProcessTimeline';
-import { absoluteUrl } from '../utils/seo';
+import { absoluteUrl, getLocalBusinessSchema, getWebSiteSchema, getBreadcrumbSchema } from '../utils/seo';
 
 export default function HomePage({ content }) {
   const { brand, services, testimonials, process: processSteps, brandPillars } = content;
@@ -28,19 +28,39 @@ export default function HomePage({ content }) {
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
     >
       <Helmet>
-        <title>SophxSkinn | Facials, Brows, Lashes & Waxing in Goodyear</title>
+        <title>SophxSkinn | Facials, Brows, Lashes & Waxing in Goodyear AZ</title>
         <meta
           name="description"
-          content="SophxSkinn delivers facials, brows, lashes, and waxing at The Remedy Salon in Goodyear, Arizona. Where skincare meets personal style."
+          content="SophxSkinn — Licensed esthetician at The Remedy Salon, 13375 W McDowell Rd #108, Goodyear, AZ 85395. Facials, brows, lashes & waxing. Book online today."
         />
         <link rel="canonical" href={canonical} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SophxSkinn" />
         <meta property="og:title" content="SophxSkinn | Goodyear AZ Esthetician" />
-        <meta
-          property="og:description"
-          content="Book your next facial, brow, lash, or waxing session with SophxSkinn."
-        />
+        <meta property="og:description" content="Licensed esthetician at The Remedy Salon, 13375 W McDowell Rd #108, Goodyear, AZ. Book facials, brows, lashes & waxing." />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={absoluteUrl('assets/Sophxskinn.png')} />
+        <meta property="og:image" content="https://sophxskinn.com/assets/Sophxskinn.png" />
+        <meta property="og:image:alt" content="SophxSkinn esthetician logo" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SophxSkinn | Facials, Brows, Lashes & Waxing in Goodyear AZ" />
+        <meta name="twitter:description" content="Licensed esthetician at The Remedy Salon in Goodyear, AZ. Facials, brows, lashes & waxing." />
+        <meta name="twitter:image" content="https://sophxskinn.com/assets/Sophxskinn.png" />
+        <meta name="twitter:image:alt" content="SophxSkinn esthetician logo" />
+
+        <script type="application/ld+json">
+          {JSON.stringify(getLocalBusinessSchema())}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(getWebSiteSchema())}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(getBreadcrumbSchema([
+            { name: 'Home', url: 'https://sophxskinn.com/' },
+          ]))}
+        </script>
       </Helmet>
 
       <HeroSection brand={{ ...brand, brandPillars }} />

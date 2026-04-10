@@ -11,6 +11,15 @@ export const siteContent = {
     primaryCtaLabel: 'Book On Vagaro',
     primaryCtaUrl: 'https://www.vagaro.com/theremedy?utm_source=sphxskinn.com',
     salon: 'The Remedy Salon',
+    address: '13375 W McDowell Rd #108, Goodyear, AZ 85395',
+    addressStreet: '13375 W McDowell Rd #108',
+    addressCity: 'Goodyear',
+    addressState: 'AZ',
+    addressZip: '85395',
+    addressCountry: 'US',
+    geo: { lat: 33.4634, lng: -112.3955 },
+    phone: '',
+    googleMapsUrl: 'https://www.google.com/maps/place/13375+W+McDowell+Rd+%23108,+Goodyear,+AZ+85395',
     scriptLogo: asset('assets/Sophxskinn.png'),
     altLogo: asset('assets/AB8A5850-BC05-46A2-90A2-BAFFF757C5E9.png'),
     clientVideos: [
@@ -183,7 +192,7 @@ export const siteContent = {
     },
     {
       question: 'Where are appointments located?',
-      answer: 'Appointments are hosted at The Remedy Salon in Goodyear, Arizona.',
+      answer: 'Appointments are hosted at The Remedy Salon — 13375 W McDowell Rd #108, Goodyear, AZ 85395.',
     },
     {
       question: 'Do you accept new clients?',
