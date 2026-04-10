@@ -35,7 +35,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter basename="/SophxSkinn">
+      <BrowserRouter basename="/">
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>

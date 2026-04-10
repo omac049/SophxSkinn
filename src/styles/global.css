@@ -189,7 +189,7 @@ video {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 24px;
+  gap: 40px;
 }
 
 .header-brand-row {
@@ -206,7 +206,13 @@ video {
   justify-self: center;
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 32px;
+}
+
+.mobile-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
 }
 
 .nav-link {
@@ -219,6 +225,7 @@ video {
   text-transform: uppercase;
   padding: 0.32rem 0;
   transition: color 0.24s ease;
+  white-space: nowrap;
 }
 
 .nav-link::after {
