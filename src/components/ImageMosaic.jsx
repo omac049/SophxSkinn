@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import SectionReveal from './SectionReveal';
 
-export default function ImageMosaic({ eyebrow, title, description, videos = [] }) {
+export default function ImageMosaic({ eyebrow, title, videos = [], bookingUrl }) {
   const shouldReduceMotion = useReducedMotion();
 
   return (
@@ -9,7 +9,6 @@ export default function ImageMosaic({ eyebrow, title, description, videos = [] }
       <div className="section-headline">
         <p className="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
-        {description && <p>{description}</p>}
       </div>
 
       <div className="image-mosaic-grid">
@@ -36,6 +35,21 @@ export default function ImageMosaic({ eyebrow, title, description, videos = [] }
               preload="metadata"
               aria-label={video.title}
             />
+            <div className="mosaic-overlay" aria-hidden="true" />
+            <div className="mosaic-content">
+              {video.label && <p className="mosaic-label">{video.label}</p>}
+              {video.tagline && <p className="mosaic-tagline">{video.tagline}</p>}
+              {bookingUrl && (
+                <a
+                  className="mosaic-cta"
+                  href={bookingUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Book now
+                </a>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

@@ -26,14 +26,20 @@ export const siteContent = {
       {
         src: asset('assets/videos/client-1.mp4'),
         title: 'Facial session',
+        label: 'Facials',
+        tagline: 'Hydration that glows from within',
       },
       {
         src: asset('assets/videos/client-2.mp4'),
         title: 'Brow shaping',
+        label: 'Brows',
+        tagline: 'Sculpted. Defined. You.',
       },
       {
         src: asset('assets/videos/brow-before-after.mp4'),
         title: 'Brow before & after',
+        label: 'Before & After',
+        tagline: 'Real results, real clients',
       },
     ],
     estheticianImages: [

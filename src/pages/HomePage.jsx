@@ -71,6 +71,7 @@ export default function HomePage({ content }) {
         eyebrow="Studio Atmosphere"
         title="Studio moments"
         videos={brand.clientVideos}
+        bookingUrl={brand.primaryCtaUrl}
       />
 
       <PhotoGallerySection

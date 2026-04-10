@@ -707,6 +707,7 @@ h3,
   overflow: hidden;
   border-radius: var(--radius-xl);
   background: var(--ink-900);
+  cursor: pointer;
 }
 
 .mosaic-video {
@@ -714,6 +715,22 @@ h3,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) {
+  .mosaic-tile:hover .mosaic-video {
+    transform: scale(1.05);
+  }
+
+  .mosaic-tile:hover .mosaic-overlay {
+    opacity: 1;
+  }
+
+  .mosaic-tile:hover .mosaic-cta {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tile-feature {
@@ -723,6 +740,83 @@ h3,
 
 .tile-tall {
   aspect-ratio: 3 / 4;
+}
+
+.mosaic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(180, 120, 100, 0.35) 0%,
+    rgba(140, 70, 60, 0.55) 100%
+  );
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.mosaic-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  z-index: 1;
+}
+
+.mosaic-label {
+  margin: 0 0 0.25rem;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mosaic-tagline {
+  margin: 0;
+  font-size: clamp(0.82rem, 1.2vw, 0.95rem);
+  color: rgba(255, 245, 240, 0.88);
+  letter-spacing: 0.02em;
+  max-width: 28ch;
+}
+
+.mosaic-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8rem;
+  width: fit-content;
+  padding: 9px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.4s ease,
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) {
+  .mosaic-cta {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .mosaic-cta:hover {
+    background: rgba(255, 255, 255, 0.24);
+    border-color: rgba(255, 255, 255, 0.55);
+  }
 }
 
 /* ─── MEET SECTION ─── */
@@ -1822,7 +1916,8 @@ button:focus-visible,
 .nav-link:focus-visible,
 .book-button:focus-visible,
 .ghost-button:focus-visible,
-.service-tile-cta:focus-visible {
+.service-tile-cta:focus-visible,
+.mosaic-cta:focus-visible {
   outline: 2px solid var(--rose-500);
   outline-offset: 2px;
 }
@@ -2446,6 +2541,11 @@ button:focus-visible,
 
   .tile-tall {
     aspect-ratio: 4 / 5;
+  }
+
+  .mosaic-cta {
+    min-height: 44px;
+    padding: 10px 20px;
   }
 
   .mosaic-tile {
